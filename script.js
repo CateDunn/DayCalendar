@@ -144,8 +144,7 @@ function renderLast5(){
 };
 renderLast5();
 
-
-
+//if then statements to render colors for past/present/future
 
 
 
