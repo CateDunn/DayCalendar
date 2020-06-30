@@ -1,5 +1,12 @@
 # DayCalendar
 
+## Description
+A day calendar that allows the user to save their daily events by the hour.
+
+![](Calendar.png)
+
+## User Story
+
 GIVEN I am using a daily planner to create a schedule
 
 WHEN I open the planner

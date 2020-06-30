@@ -8,9 +8,11 @@ var dateResult = moment.format(format);
 $("#currentDay").html(dateResult);
 
 
-var timeFormat = ('LT');
-//current time (automatically updates)
+var timeFormat = ('HH');
+//current time in military time, just the hour (automatically updates)
 var currentTime= moment.format(timeFormat);
+console.log(currentTime)
+
 
 
 //functions that place the inputed calendar events into the time block for that hour. The event is stored
@@ -146,8 +148,10 @@ renderLast5();
 
 //if then statements to render colors for past/present/future
 
+var displayHour = $('.hour').data()
+console.log(displayHour)
 
-
-
-
+if (displayHour < currentTime){
+    $('.time-block').addClass('past')
+}
 
